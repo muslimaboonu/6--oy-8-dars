@@ -1,14 +1,8 @@
-import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Home, About, Contact } from "./pages";
+import RouteController from "./pages/routeController.jsx";
 
-function App() {
-  const router = createBrowserRouter([
-    { path: "/", element: <Home /> },
-    { path: "/about", element: <About /> },
-    { path: "/contact", element: <Contact /> },
-  ]);
-  return <RouterProvider router={router} />;
+const App = () => {
+  return (
+      <RouteController/>
+  )
 }
-
-export default App;
+export default App
